@@ -10,6 +10,7 @@ import SkillsMain from "./Components/skillsSection/SkillsMain";
 import ExperienceMain from "./Components/experienceSection/ExperienceMain";
 import ProjectsMain from "./Components/projectsSection/ProjectsMain";
 import ContactMeMain from "./Components/contactMeSection/ContactMeMain";
+import FooterMain from "./Components/footer/FooterMain";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ExperienceMain />
       <ProjectsMain />
       <ContactMeMain />
+      <FooterMain />
       <HelperSection />
     </main>
   );

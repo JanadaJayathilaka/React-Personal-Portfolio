@@ -34,7 +34,7 @@ const projects = [
 ];
 const ProjectsMain = () => {
   return (
-    <div>
+    <div id="projects">
       <ProjectText />
       <div>
         {projects.map((item, index) => {
