@@ -1,5 +1,4 @@
 import React from "react";
-import SingleSkill from "./SingleSkill";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -68,18 +67,19 @@ const skills = [
   },
 ];
 
-const AllSkills = () => {
+const AllSkillsSM = () => {
   return (
-    <div>
-      <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
-        {skills.map((item, index) => {
-          return (
-            <SingleSkill key={index} text={item.skill} imgSvg={<item.icon />} />
-          );
-        })}
-      </div>
+    <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-12 my-12">
+      {skills.map((item, index) => {
+        return (
+          <div key={index} className="flex flex-col items-center">
+            <item.icon className="text-7xl text-orange" />
+            <p className="text-center mt-4 text-white">{item.skill}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-export default AllSkills;
+export default AllSkillsSM;
