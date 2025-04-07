@@ -13,6 +13,9 @@ import { SiSpringboot } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/variants";
+
 const skills = [
   {
     skill: "HTML",
@@ -74,7 +77,19 @@ const AllSkills = () => {
       <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
         {skills.map((item, index) => {
           return (
-            <SingleSkill key={index} text={item.skill} imgSvg={<item.icon />} />
+            <motion.div
+              variants={fadeIn("up", `${index}` * 0.1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }}
+              key={index}
+            >
+              <SingleSkill
+                key={index}
+                text={item.skill}
+                imgSvg={<item.icon />}
+              />
+            </motion.div>
           );
         })}
       </div>

@@ -1,8 +1,15 @@
 import React from "react";
 import { CiLinkedin } from "react-icons/ci";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/variants";
+
 const SingleProject = ({ name, year, align, image, link }) => {
   return (
-    <div
+    <motion.div
+      variants={fadeIn("top", 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.1 }}
       className={`flex w-full sm:flex-col-reverse items-center gap-8 ${
         align === "left" ? "md:flex-row" : "md:flex-row-reverse"
       } justify-end sm:flex-col`}
@@ -29,7 +36,7 @@ const SingleProject = ({ name, year, align, image, link }) => {
         <div className="w-full h-full bg-cyan opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden"></div>
         <img src={image} alt="website image" className="w-full h-full" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

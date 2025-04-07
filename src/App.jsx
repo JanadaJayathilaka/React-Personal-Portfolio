@@ -5,7 +5,7 @@ import HeroMain from "./Components/heroSection/heroMain";
 import HeroGradient from "./Components/heroSection/HeroGradient";
 import SubHeroSection from "./Components/heroSection/SubHeroSection";
 import AboutMeMain from "./Components/aboutMeSection/AboutMeMain";
-import HelperSection from "./Components/HelperSection";
+
 import SkillsMain from "./Components/skillsSection/SkillsMain";
 import ExperienceMain from "./Components/experienceSection/ExperienceMain";
 import ProjectsMain from "./Components/projectsSection/ProjectsMain";
@@ -25,7 +25,6 @@ function App() {
       <ProjectsMain />
       <ContactMeMain />
       <FooterMain />
-      <HelperSection />
     </main>
   );
 }
