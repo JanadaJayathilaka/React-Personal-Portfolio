@@ -13,7 +13,7 @@ const HeroPic = () => {
       className="h-full flex items-center justify-center"
     >
       <img
-        src="../public/pic.png"
+        src="./public/pic.png"
         alt="profile-photo"
         className="max-h-[450px] w-auto rounded-full"
       />
