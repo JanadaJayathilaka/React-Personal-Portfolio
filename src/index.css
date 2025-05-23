@@ -19,12 +19,6 @@
   --color-lightGrey: #8a938e;
   --color-darkGrey: #3f4441;
 
-  --screen-sm: 350px;
-  --screen-md: 768px;
-  --screen-lg: 1024px;
-  --screen-xl: 1280px;
-  --screen-2xl: 1536px;
-
   --shadow-cyanShadow: 0px 0px 20px 0px rgba(94, 206, 220, 0.5);
   --shadow-cyanBigShadow: 10px 10px 1000px 500px rgba(94, 206, 220, 0.3);
   --shadow-cyanMediumShadow: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
