@@ -4,7 +4,7 @@ import ExperienceMain from "./Components/experienceSection/ExperienceMain";
 import FooterMain from "./Components/footer/FooterMain";
 import HeroGradient from "./Components/heroSection/HeroGradient";
 import HeroMain from "./Components/heroSection/HeroMain";
-import NavbarMain from "./components/navbar/NavbarMain";
+import NavbarMain from "./Components/navbar/NavbarMain";
 import ProjectsMain from "./Components/projectsSection/ProjectsMain";
 import SkillsMain from "./Components/skillsSection/SkillsMain";
 import SubSkills from "./Components/skillsSection/SubSkills";
