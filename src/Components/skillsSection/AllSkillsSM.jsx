@@ -8,6 +8,8 @@ import { fadeIn } from "../../framerMotion/variants";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiSpringboot } from "react-icons/si";
 
+import { FaFlutter } from "react-icons/fa6";
+
 const skills = [
   {
     skill: "HTML",
