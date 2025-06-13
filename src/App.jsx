@@ -1,4 +1,4 @@
-import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
+import AboutMeMain from "./Components/AboutMeSection/AboutMeMain";
 import ContactMeMain from "./components/contactMeSection/ContactMeMain";
 import ExperienceMain from "./components/experienceSection/ExperienceMain";
 import FooterMain from "./components/footer/FooterMain";
