@@ -1,5 +1,4 @@
-import React from "react";
-import ProjectText from "./ProjectText";
+import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
@@ -34,28 +33,28 @@ const projects = [
     link: "https://www.linkedin.com/in/janada-jayathilaka/details/projects/",
   },
 ];
+
 const ProjectsMain = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="max-w-[1200px] mx-auto px-4">
       <motion.div
-        variants={fadeIn("up", 0.2)}
+        variants={fadeIn("top", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0 }}
+        viewport={{ once: false, amount: 0.7 }}
       >
-        <ProjectText />
+        <ProjectsText />
       </motion.div>
-
-      <div>
-        {projects.map((item, index) => {
+      <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
+        {projects.map((project, index) => {
           return (
             <SingleProject
               key={index}
-              name={item.name}
-              year={item.year}
-              align={item.align}
-              image={item.image}
-              link={item.link}
+              name={project.name}
+              year={project.year}
+              align={project.align}
+              image={project.image}
+              link={project.link}
             />
           );
         })}

@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceInfo from "./ExperienceInfo";
 
 const ExperienceTopLeft = () => {
@@ -7,7 +6,6 @@ const ExperienceTopLeft = () => {
       <p className="text-orange font-bold uppercase text-3xl font-special text-center">
         Since 2024
       </p>
-
       <p className="text-white text-center">
         Over the past few years, I’ve gained valuable hands-on experience
         through a variety of projects and collaborations. From building

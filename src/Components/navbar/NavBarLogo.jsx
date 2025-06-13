@@ -1,17 +1,14 @@
-import React from "react";
-
-const NavBarLogo = () => {
+const NavbarLogo = () => {
   return (
     <div>
-      <h1 className="hidden md:block text-white text-2xl">
+      <h1 className="text-white  text-2xl sm:hidden md:block">
         Janada Jayathilaka
       </h1>
-
-      <h1 className="block md:hidden text-white font-special font-extrabold text-4xl">
-        J.J
+      <h1 className="text-white font-special font-extrabold text-4xl md:hidden sm:block">
+        JJ
       </h1>
     </div>
   );
 };
 
-export default NavBarLogo;
+export default NavbarLogo;

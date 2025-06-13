@@ -1,19 +1,14 @@
-import React from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { FaFlutter } from "react-icons/fa6";
-import { IoLogoJavascript } from "react-icons/io5";
+import { SiRedux } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoFirebase } from "react-icons/io5";
-import { SiArduino } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { SiSpringboot } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { IoLogoGithub } from "react-icons/io";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+
 const skills = [
   {
     skill: "HTML",
@@ -24,54 +19,34 @@ const skills = [
     icon: FaCss3Alt,
   },
   {
+    skill: "JavaScript",
+    icon: IoLogoJavascript,
+  },
+  {
+    skill: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
     skill: "ReactJS",
     icon: FaReact,
   },
   {
-    skill: "Flutter",
-    icon: FaFlutter,
+    skill: "Redux",
+    icon: SiRedux,
   },
   {
-    skill: "JavaScript",
-    icon: IoLogoJavascript,
+    skill: "NextJS",
+    icon: SiNextdotjs,
   },
   {
     skill: "TailwindCSS",
     icon: RiTailwindCssFill,
   },
-  {
-    skill: "FireBase",
-    icon: IoLogoFirebase,
-  },
-  {
-    skill: "Arduino",
-    icon: SiArduino,
-  },
-  {
-    skill: "Bootstrap",
-    icon: FaBootstrap,
-  },
-  {
-    skill: "Spring Boot",
-    icon: SiSpringboot,
-  },
-  {
-    skill: "MySQL",
-    icon: SiMysql,
-  },
-  {
-    skill: "MongoDB",
-    icon: SiMongodb,
-  },
-  {
-    skill: "GitHub",
-    icon: IoLogoGithub,
-  },
 ];
 
 const AllSkillsSM = () => {
   return (
-    <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-12 my-12">
+    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
       {skills.map((item, index) => {
         return (
           <motion.div
@@ -83,7 +58,7 @@ const AllSkillsSM = () => {
             className="flex flex-col items-center"
           >
             <item.icon className="text-7xl text-orange" />
-            <p className="text-center mt-4 text-white">{item.skill}</p>
+            <p className="text-center mt-4">{item.skill}</p>
           </motion.div>
         );
       })}

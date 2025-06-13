@@ -1,5 +1,3 @@
-import React from "react";
-
 const ExperienceTopRight = () => {
   return (
     <div className="xl:w-[25%] lg:w-[30%] border border-lightBrown p-4 rounded-xl">

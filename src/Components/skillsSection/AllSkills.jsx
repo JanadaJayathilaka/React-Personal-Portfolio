@@ -1,4 +1,3 @@
-import React from "react";
 import SingleSkill from "./SingleSkill";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -7,8 +6,6 @@ import { FaFlutter } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiArduino } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
 import { SiSpringboot } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -45,14 +42,7 @@ const skills = [
     skill: "FireBase",
     icon: IoLogoFirebase,
   },
-  {
-    skill: "Arduino",
-    icon: SiArduino,
-  },
-  {
-    skill: "Bootstrap",
-    icon: FaBootstrap,
-  },
+
   {
     skill: "Spring Boot",
     icon: SiSpringboot,
@@ -78,7 +68,7 @@ const AllSkills = () => {
         {skills.map((item, index) => {
           return (
             <motion.div
-              variants={fadeIn("up", `${index}` * 0.1)}
+              variants={fadeIn("up", `0.${index}`)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0 }}
