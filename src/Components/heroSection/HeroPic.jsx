@@ -13,7 +13,7 @@ const HeroPic = () => {
     >
       <img
         src="./pic.png"
-        alt="Abdelrahman Qassem"
+        alt="Janada Jayathilaka"
         className="max-h-[450px] w-auto rounded-full"
       />
 
